@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Oswald:wght@300&display=swap');
+body{
+    padding: 0 ;
+    margin: 0%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /*background: #eff4fd ;*/
+    background-image: url("https://img.freepik.com/free-vector/watercolour-background-with-leaves_91008-314.jpg?w=2000")
+} 
+
+nav{
+    display:flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 13px;
+}
+
+nav ul li a{
+    text-decoration: none ;
+    color: darkblue;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:darkkhaki;
+}
+.page-content{
+    margin: 4%;
+   
+}
+.page-content header{
+    margin-top: 5%;
+    max-width: 88%;
+}
+span{
+    color: goldenrod;
+ }
+.page-content header h1{
+    margin: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'oswald', sans-serif;
+    font-size: 3vw ;  
+    color: rgb(0, 0, 125);
+}
+.page-content header p1{
+    line-height: 30px ;
+    color:rgb(63, 65, 130);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin: auto;
+}
+.images{
+    width: 30%;
+    height: 65%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    float: right;
+    margin-right: 20px;
+ }
+ .images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s ;
+ }
+
+ .images:hover .shape{
+    bottom: 40px;
+ }
+ .images:hover .me{
+    left:45%;
+    display: inline-block;
+
+ }
+
+@media screen and(max-width: 700px) {
+    nav{
+        justify-content: center;
+    }
+    nav ul{
+        display: none;
+
+    }
+    nav ul li{
+        display: none;
+    }
+    nav ul li a{
+        display: none;
+    }
+    .page-content header {
+        margin-top:10% ;
+        max-width: 100%;
+         
+
+    }
+    
+}

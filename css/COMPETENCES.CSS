@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/watercolour-background-with-leaves_91008-314.jpg?w=2000") ;
+} 
+
+nav{
+    display:flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 13px;
+}
+
+nav ul li a{
+    text-decoration: none ;
+    color: darkblue;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:darkkhaki;
+}
+.skills ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 250px;
+}
+.skills ul li{
+    list-style: none;
+    margin: 50px 50px ;
+}
+.section__title{
+    text-align: center;
+    color:  darkblue;
+
+}
+.section__subtitle{
+    text-align: center;
+    color: darkkhaki;
+    margin-left: 100px;
+}
+
+.skills{
+    align-items:center;
+    margin-bottom: 100px;
+    max-width: 1200px;
+    
+}
+.skills__container{
+    row-gap: 0;
+}
+.skills_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px ;
+    cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+    font-size: 2rem;
+}
+.skills__icon{
+    margin-right: 20;
+}
+
+.skills_title{
+    font-size: 1.5em;
+    color: rgb(81, 81, 115);
+}
+.skills_subtitle{
+    font-size: small;
+    color: rgb(111, 143, 154) ;
+}
+.skills__arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills__title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.skills__name{
+    font-size: 1.5em;
+    font-weight: 150;
+    color: rgb(119, 108, 81);
+}
+.skills__bar,
+.skills__percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+.skills__bar{
+    background-color: rgb(182, 212, 255);
+    margin-left:10px ;
+}
+.skills__percentage{
+    display: block;
+    background-color:rgb(39, 45, 170) ;
+    
+}
+.skills__html{
+    width: 70%  ;
+}
+.skills__css{
+    width: 70%;
+}
+.skills__js{
+    width: 70%;
+}
+.skills__python{
+    width: 80%;
+}
+.skills__c{
+    width: 80%;
+}
+.skills__sql{
+    width: 70%;
+}
+.skills__lightroom{
+    width: 70%;
+}
+.skills__photoshop{
+    width: 20%;
+}
+.skills__sketch{
+    width: 20%;
+}
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: 3px;
+}
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
+}

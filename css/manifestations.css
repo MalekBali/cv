@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    background-image: url("https://img.freepik.com/free-vector/watercolour-background-with-leaves_91008-314.jpg?w=2000") ;
+} 
+
+nav{
+    display:flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 13px;
+}
+
+nav ul li a{
+    text-decoration: none ;
+    color: darkblue;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:darkkhaki;
+}
+
+
+.manifestations__container ul {
+    gap: 0.5rem;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    list-style: none;
+
+    
+    
+}
+
+
+.manifestations__content{
+    margin-top: 30px;
+    margin-left: 170px;
+    margin-right: 50px;
+    max-width: 300px;
+    background-color: #d7ad144e;
+    border-radius: 10%;
+    transition: .3s ;
+    padding: 3.5rem 3.5rem 1.25rem 7rem;
+
+    
+}
+.manifestations__modal-content ul{
+    grid-template-columns: repeat(1,1fr)
+
+}
+
+
+.manifestations__modal ul li{
+    list-style:circle ;
+    color:#5b7581 ;
+    margin: 10px 0 ;
+    font-weight: 600;
+    
+    
+}
+.manifestations__content:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,15);
+}
+
+.manifestations__title{
+    font-size: 1.125rem ;
+    margin-bottom: 1rem ;
+    font-weight: 100 ;
+    color: rgb(12, 31, 117);
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button{
+    display: inline-block;
+    background-color: rgb(255, 220, 66);
+    color: rgb(45, 45, 98);
+    padding: 1rem;
+    border-radius: .5rem ;
+    font-weight: 200;
+    cursor: pointer;
+}
+.button__icon{
+    font-size: 1.25;
+    margin-left: 2rem;
+    transition: .3s;
+}
+.button--small{
+    padding: .75rem 1rem;
+}
+.button--link{
+    padding: 0;
+    background-color: transparent ;
+    color:rgb(17, 17, 172) ;
+}
+
+.button--link:hover{
+    color: transparent;
+    color: rgb(217, 178, 4);
+}
+.manifestations__button:hover .button__icon{
+    transform: translate(.25rem);
+
+}

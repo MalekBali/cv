@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/watercolour-background-with-leaves_91008-314.jpg?w=2000") ;
+} 
+
+nav{
+    display:flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 13px;
+}
+
+nav ul li a{
+    text-decoration: none ;
+    color: darkblue;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:darkkhaki;
+}
+
+
+.passions__container ul {
+    gap: 0.5rem;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    list-style: none;
+    
+    
+}
+
+
+.passions__content{
+    margin-top: 30px;
+    margin-left: 170px;
+    margin-right: 50px;
+    max-width: 300px;
+    background-color: #d7ad144e;
+    /*background-color: rgb(188, 213, 236);*/
+    /*background-image: linear-gradient(to bottom, rgba(197, 187, 130, 0.318), rgba(93, 109, 255, 0.323));*/
+    border-radius: 30%;
+    transition: .3s ;
+    padding: 3.5rem .5rem 1.25rem 7rem;
+
+    
+}
+.passions__modal-content ul{
+    grid-template-columns: repeat(1,1fr)
+
+}
+
+
+.passions__modal ul li{
+    list-style: none;
+    color:#5b7581 ;
+    margin: 10px 0 ;
+    font-weight: 600;
+    
+    
+}
+.passions__content:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,15);
+}
+.passions__icon{
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom:  1rem; 
+}
+.button{
+    display: inline-block;
+    background-color: rgb(255, 220, 66);
+    color: rgb(45, 45, 98);
+    padding: 1rem;
+    border-radius: .5rem ;
+    font-weight: 200;
+    cursor: pointer;
+}
+.button__icon{
+    font-size: 1.25;
+    margin-left: 2rem;
+    transition: .3s;
+}
+.button--small{
+    padding: .75rem 1rem;
+}
+.button--link{
+    padding: 0;
+    background-color: transparent ;
+    color:rgb(17, 17, 172) ;
+}
+
+.button--link:hover{
+    color: transparent;
+    color: rgb(217, 178, 4);
+}
+
+.passions__titles{
+    font-size: 50px ;
+    margin-bottom: 1rem ;
+    font-weight: 150 ;
+    color: rgb(12, 31, 117);
+}
+
+.passions__subtitle{
+    font-size: 25px ;
+    margin-bottom: 1rem ;
+    font-weight: 100 ;
+    color: rgb(200, 194, 29);
+    font-style: oblique;
+
+}
+.sub_p{
+    margin-bottom: 1rem;
+}
+
+.passions__title{
+    font-size: 1.125rem ;
+    margin-bottom: 1rem ;
+    font-weight: 100 ;
+    color: rgb(12, 31, 117);
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.passions__button:hover .button__icon{
+    transform: translate(.25rem);
+
+}
+.passions__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.passions__modal-content{
+    position: relative;
+    background-color:#FFF ;
+    padding: 1.rem;
+    border-radius: .5rem;
+
+}
+.passions__modal-passions{
+    row-gap: 1rem;
+}
+.passions__modal-passion{
+    display: flex ;
+}
+.passions__modal-title{
+    font-size: 1.125;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+}
+.passions__modal-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: rgb(45, 45, 98) ;
+    cursor: pointer;
+}
+.passions__modal-icone{
+    color: rgb(45, 45, 98);
+    margin-right: .25rem;
+}
+.active-modal{
+    opacity: 1;
+    visibility: visible;
+}
